@@ -1,0 +1,1 @@
+set classpath=%classpath%;C:\bea8\weblogic81\server\lib\webserviceclient.jar;C:\bea8\weblogic81\server\lib\webservices.jar;.

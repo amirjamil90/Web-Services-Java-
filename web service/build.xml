@@ -1,0 +1,19 @@
+
+<project name="ServicePackager" default="ear" basedir=".">
+	<target name="compile">
+		<javac srcdir="." destdir="."/>
+	</target>
+	<target name="ear" depends="compile">
+		<servicegen destEar="adder.ear" contextURI="myServiceApp">
+		<service javaClassComponents="mypack.MyService" 
+targetNameSpace="http://localhost:7001"
+				serviceName="Adder"
+				serviceURI="/Adder"
+				generateTypes="True"
+				expandMethods="True"
+				style="rpc">
+			<client packageName="pack"/>
+		</service>
+		</servicegen>
+	</target>
+</project>

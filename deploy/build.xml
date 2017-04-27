@@ -1,0 +1,7 @@
+
+
+<project name="deployer" default="deploy" basedir=".">
+	<target name="deploy">
+		<wldeploy action="deploy" source="adder.ear" user="weblogic" password="WEBLOGIC" adminurl="t3://localhost:7001" targets="myserver"/>
+	</target>
+</project>

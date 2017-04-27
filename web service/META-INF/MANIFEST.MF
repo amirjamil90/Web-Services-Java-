@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+
+Name: pack/AdderPort_Stub.class
+
+Name: pack/Adder.wsdl
+
+Name: pack/AdderPort.class
+
+Name: pack/Adder.xml
+
+Name: pack/Adder_Impl.class
+
+Name: pack/Adder.class
+

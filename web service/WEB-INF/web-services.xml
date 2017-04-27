@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-services>
+
+  <web-service useSOAP12="false" targetNamespace="http://localhost:7001" name="Adder" style="rpc" uri="/Adder">
+    <components>
+      <java-class name="jcComp0" class-name="mypack.MyService">
+      </java-class>
+    </components>
+
+    <operations>
+      <operation name="add" method="add(int,int)" component="jcComp0">
+        <params>
+          <param style="in" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="xsd:int" location="body" name="intVal" class-name="int">
+          </param>
+          <param style="in" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="xsd:int" location="body" name="intVal0" class-name="int">
+          </param>
+          <return-param xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="xsd:int" location="body" name="result" class-name="int">
+          </return-param>
+
+        </params>
+
+      </operation>
+      <operation name="subtract" method="subtract(int,int)" component="jcComp0">
+        <params>
+          <param style="in" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="xsd:int" location="body" name="intVal" class-name="int">
+          </param>
+          <param style="in" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="xsd:int" location="body" name="intVal0" class-name="int">
+          </param>
+          <return-param xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="xsd:int" location="body" name="result" class-name="int">
+          </return-param>
+
+        </params>
+
+      </operation>
+    </operations>
+
+  </web-service>
+</web-services>
